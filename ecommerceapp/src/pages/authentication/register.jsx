@@ -14,11 +14,11 @@ const Register = () => {
         email,
         password,
       });
-      localStorage.setItem("token", res.data.token);
+      console.log("fronted register response", res);
+      // localStorage.setItem("token", res.data.token);
       navigate("/");
     } catch (err) {
-      console.error(err.response.data);
-      alert(err.response.data.msg);
+      console.log(err);
     }
   };
 

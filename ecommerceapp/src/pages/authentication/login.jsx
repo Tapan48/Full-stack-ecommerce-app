@@ -10,15 +10,18 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:3001/api/auth/login", {
-        email,
-        password,
-      });
-      localStorage.setItem("token", res.data.token);
+      const response = await axios.post(
+        "http://localhost:3001/api/auth/login",
+        {
+          email,
+          password,
+        } 
+      );
+      console.log("fronted login response", response);
+      // localStorage.setItem("token", response.data.token);
       navigate("/");
     } catch (err) {
-      console.error(err.response.data);
-      alert(err.response.data.msg);
+      console.log(err);
     }
   };
 
@@ -28,7 +31,7 @@ const Login = () => {
       <form onSubmit={handleSubmit}>
         <input
           type="email"
-          placeholder="Email"
+          placeholder="Emaill"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
