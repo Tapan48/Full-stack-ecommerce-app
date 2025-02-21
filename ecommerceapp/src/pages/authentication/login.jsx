@@ -15,10 +15,10 @@ const Login = () => {
         {
           email,
           password,
-        } 
+        }
       );
       console.log("fronted login response", response);
-      // localStorage.setItem("token", response.data.token);
+      localStorage.setItem("token", response.data.token);
       navigate("/");
     } catch (err) {
       console.log(err);
