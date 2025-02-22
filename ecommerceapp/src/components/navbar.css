@@ -1,33 +1,32 @@
 /* Navbar container */
 .navbar {
-    background-color: #333;
-    padding: 10px;
-    color: white;
-  }
-  
-  /* Navbar links */
-  .links {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .links a {
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    margin: 0 10px;
-    transition: color 0.3s ease;
-  }
-  
-  .links a:hover {
-    color: #ffd700; /* Change the color on hover */
-  }
-  
-  /* Optional: Style the cart icon */
-  .links .ph-shopping-cart {
-    width: 24px;
-    height: 24px;
-    fill: white;
-    margin-right: 5px;
-  }
-  
+  background-color: #333;
+  padding: 10px;
+  color: white;
+}
+
+/* Navbar links */
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #ffd700; /* Change the color on hover */
+}
+
+/* Optional: Style the cart icon */
+.links .ph-shopping-cart {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  margin-right: 5px;
+}
