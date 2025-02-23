@@ -3,7 +3,6 @@ import "./App.css";
 import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navbar from "./components/navbar";
-import Sidebar from "./components/Sidebar";
 import { ShopContextProvider } from "./context/shop-context";
 import Login from "./pages/authentication/login";
 import Register from "./pages/authentication/register";
@@ -19,7 +18,7 @@ function App() {
         <Router>
           {/* console.log("hi") */}
           <Navbar />
-          <Sidebar />
+
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />

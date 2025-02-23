@@ -24,7 +24,7 @@
   position: fixed;
   top: 20px;
   left: 20px;
-  background-color: #1a1a1a;
+  /* background-color: #1a1a1a; */
   color: white;
   border: none;
   border-radius: 50%;
@@ -38,7 +38,9 @@
 }
 
 .sidebar-menu {
-  padding: 20px 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .menu-item {
@@ -48,6 +50,7 @@
   color: white;
   text-decoration: none;
   transition: background-color 0.2s;
+  list-style-type: none;
 }
 
 .menu-item:hover {
@@ -65,14 +68,27 @@
 
 @media (min-width: 768px) {
   .sidebar {
+    left: -250px;
+  }
+
+  .sidebar.open {
     left: 0;
   }
 
   .sidebar-toggle {
-    display: none;
+    display: block;
   }
 
   main {
+    margin-left: 0;
+  }
+
+  main.sidebar-open {
     margin-left: 250px;
   }
+}
+
+.sidebar-toggle.disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }

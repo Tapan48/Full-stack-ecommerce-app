@@ -2,6 +2,8 @@ const User = require("../models/User"); // Import User model
 
 const getProfile = async (req, res) => {
     try {
+
+        console.log("getProfile controller called");
         // Fetch user data from database using req.userId (set in auth middleware)
         const user = await User.findById(req.userId).select("-password"); // Exclude password
 

@@ -8,6 +8,7 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className="links">
+        <Link to="/">Home</Link>
         <Link to="/shop">Shop</Link>
         <Link to="/cart">Cart</Link>
         <Link to="/profile">
