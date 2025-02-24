@@ -7,11 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 // import {BrowserRouter }from 'react-router-dom';
 // import  {ShopContextProvider}  from "./context/shop-context";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+root.render(<App />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
