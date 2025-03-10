@@ -46,5 +46,11 @@
     "productName": "DON'T TRIP UNSTRUCTURED HAT",
     "price": 40.0,
     "productImage": "http://localhost:3001/uploads/8.webp"
-  }
+  },
+  {
+    "id": 9,
+    "productName": "Vintage Leather Messenger Bag",
+    "price": 89.99,
+    "productImage": "http://localhost:3001/uploads/9.webp"
+}
 ]
